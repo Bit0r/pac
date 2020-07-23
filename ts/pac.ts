@@ -86,6 +86,7 @@ const keywords = [
     'kde',
     'material',
     'msecnd',
+    'v2ray'
 ];
 
 let keywordsRegex = new RegExp(keywords.join('|'), 'i');
