@@ -52,7 +52,8 @@ const domains = [
     'angular.cn',
     '500px.org',
     'fontawesome.com',
-    'csacademy.com'
+    'csacademy.com',
+    'blogger.com'
 ];
 const keywords = [
     'google',

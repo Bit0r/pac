@@ -52,7 +52,8 @@ const domains = [
     'angular.cn',
     '500px.org',
     'fontawesome.com',
-    'csacademy.com'
+    'csacademy.com',
+    'blogger.com'
 ];
 
 const keywords = [
@@ -130,18 +131,18 @@ function list2tree() {
 
     });
 
-    leaf2null(domainsTree,Object.keys(domainsTree));
+    leaf2null(domainsTree, Object.keys(domainsTree));
 
     return domainsTree;
 }
 
-function leaf2null(domainTree: any,keys:string[]) {
+function leaf2null(domainTree: any, keys: string[]) {
     keys.forEach(key => {
-        let subKeys=Object.keys(domainTree[key]);
+        let subKeys = Object.keys(domainTree[key]);
         if (subKeys.length === 0) {
             domainTree[key] = null;
         } else {
-            leaf2null(domainTree[key],subKeys);
+            leaf2null(domainTree[key], subKeys);
         }
     });
 }
