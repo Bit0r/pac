@@ -49,7 +49,6 @@ const domains = [
     'medium.com',
     'diigo.com',
     'disqus.com',
-    'angular.cn',
     '500px.org',
     'fontawesome.com',
     'csacademy.com',
@@ -87,27 +86,22 @@ const keywords = [
     'msecnd',
     'v2ray'
 ];
-let keywordsRegex = new RegExp(keywords.join('|'), 'i');
+let keywordsRegex = new RegExp(keywords.join('|'));
 let domainsTree = list2tree();
 function FindProxyForURL(_, host) {
     let chunks = host.split('.');
+    let length = chunks.length;
     let domainTree = domainsTree;
-    for (let i = chunks.length - 1; i >= 0; i--) {
-        let chunk = chunks[i];
-        if (i < chunks.length - 1 && keywordsRegex.test(chunk)) {
-            break;
-        }
-        else if (domainTree.hasOwnProperty(chunk)) {
-            domainTree = domainTree[chunk];
-            if (domainTree === null) {
-                break;
-            }
-        }
-        else {
-            return modes.direct;
+    if (keywordsRegex.test(chunks[length - 2]) || keywordsRegex.test(chunks[length - 3])) {
+        return modes.proxy;
+    }
+    for (let i = length - 1; i >= 0 && domainTree.hasOwnProperty(chunks[i]); i--) {
+        domainTree = domainTree[chunks[i]];
+        if (domainTree === null) {
+            return modes.proxy;
         }
     }
-    return modes.proxy;
+    return modes.direct;
 }
 function list2tree() {
     let domainsTree = {};
@@ -126,8 +120,9 @@ function list2tree() {
     return domainsTree;
 }
 function leaf2null(domainTree, keys) {
+    let subKeys;
     keys.forEach(key => {
-        let subKeys = Object.keys(domainTree[key]);
+        subKeys = Object.keys(domainTree[key]);
         if (subKeys.length === 0) {
             domainTree[key] = null;
         }

@@ -49,7 +49,6 @@ const domains = [
     'medium.com',
     'diigo.com',
     'disqus.com',
-    'angular.cn',
     '500px.org',
     'fontawesome.com',
     'csacademy.com',
@@ -89,29 +88,29 @@ const keywords = [
     'v2ray'
 ];
 
-let keywordsRegex = new RegExp(keywords.join('|'), 'i');
+let keywordsRegex = new RegExp(keywords.join('|'));
 let domainsTree: { [key: string]: any } = list2tree();
 
 function FindProxyForURL(_: string, host: string) {
     let chunks = host.split('.');
+    let length = chunks.length;
     let domainTree = domainsTree;
 
-    for (let i = chunks.length - 1; i >= 0; i--) {
-        let chunk = chunks[i];
+    //关键词匹配二级或三级域名
+    if (keywordsRegex.test(chunks[length - 2]) || keywordsRegex.test(chunks[length - 3])) {
+        return modes.proxy;
+    }
 
-        if (i < chunks.length - 1 && keywordsRegex.test(chunk)) {
-            break;
-        } else if (domainTree.hasOwnProperty(chunk)) {
-            domainTree = domainTree[chunk];
-            if (domainTree === null) {
-                break;
-            }
-        } else {
-            return modes.direct;
+    //域名列表匹配整个域名
+    for (let i = length - 1; i >= 0 && domainTree.hasOwnProperty(chunks[i]); i--) {
+        domainTree = domainTree[chunks[i]];
+        if (domainTree === null) {
+            return modes.proxy;
         }
     }
 
-    return modes.proxy;
+    //匹配失败，进行直连
+    return modes.direct;
 }
 
 function list2tree() {
@@ -138,8 +137,9 @@ function list2tree() {
 }
 
 function leaf2null(domainTree: any, keys: string[]) {
+    let subKeys: string[];
     keys.forEach(key => {
-        let subKeys = Object.keys(domainTree[key]);
+        subKeys = Object.keys(domainTree[key]);
         if (subKeys.length === 0) {
             domainTree[key] = null;
         } else {
