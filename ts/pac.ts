@@ -98,7 +98,7 @@ function FindProxyForURL(_: string, host: string) {
     let domainTree = domainsTree;
 
     //关键词匹配二级或三级域名
-    if (keywordsRegex.test(chunks[length - 2]) || keywordsRegex.test(chunks[length - 3])) {
+    if (keywordsRegex.test(chunks[length - 2] + '-' + (chunks[length - 3] ?? ''))) {
         return modes.proxy;
     }
 

@@ -93,7 +93,7 @@ function FindProxyForURL(_, host) {
     let chunks = host.split('.');
     let length = chunks.length;
     let domainTree = domainsTree;
-    if (keywordsRegex.test(chunks[length - 2]) || keywordsRegex.test(chunks[length - 3])) {
+    if (keywordsRegex.test(chunks[length - 2] + '-' + (chunks[length - 3] ?? ''))) {
         return modes.proxy;
     }
     for (let i = length - 1; i >= 0 && domainTree.hasOwnProperty(chunks[i]); i--) {
