@@ -58,6 +58,7 @@ const domains = [
 const keywords = [
     'google',
     'gstatic',
+    'gmail',
     'azure',
     'quora',
     'youtu',
