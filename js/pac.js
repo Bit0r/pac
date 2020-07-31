@@ -52,7 +52,8 @@ const domains = [
     '500px.org',
     'fontawesome.com',
     'csacademy.com',
-    'blogger.com'
+    'blogger.com',
+    'princeton.edu'
 ];
 const keywords = [
     'google',
