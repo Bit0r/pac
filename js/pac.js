@@ -86,7 +86,8 @@ const keywords = [
     'kde',
     'material',
     'msecnd',
-    'v2ray'
+    'v2ray',
+    'visualstudio'
 ];
 let keywordsRegex = new RegExp(keywords.join('|'));
 let domainsTree = list2tree();
