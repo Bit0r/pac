@@ -54,7 +54,8 @@ const domains = [
     'csacademy.com',
     'blogger.com',
     'princeton.edu',
-    'javascript.info'
+    'javascript.info',
+    'kubernetes.io'
 ];
 const keywords = [
     'google',
