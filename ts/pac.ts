@@ -55,7 +55,9 @@ const domains = [
     'blogger.com',
     'princeton.edu',
     'javascript.info',
-    'kubernetes.io'
+    'kubernetes.io',
+    'appspot.com',
+    'kde.org'
 ];
 
 const keywords = [
@@ -86,8 +88,6 @@ const keywords = [
     'ytimg',
     'ggpht',
     'doubleclick',
-    'kde',
-    'material',
     'msecnd',
     'v2ray',
     'visualstudio'
