@@ -97,6 +97,9 @@ function FindProxyForURL(_, host) {
     let chunks = host.split('.');
     let length = chunks.length;
     let domainTree = domainsTree;
+    if (['localhost', 'cn'].includes(chunks[length - 1])) {
+        return modes.direct;
+    }
     if (keywordsRegex.test(chunks[length - 2] + '-' + (chunks[length - 3] ?? ''))) {
         return modes.proxy;
     }
