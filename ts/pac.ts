@@ -90,7 +90,8 @@ const keywords = [
     'doubleclick',
     'msecnd',
     'v2ray',
-    'visualstudio'
+    'visualstudio',
+    'vsassets'
 ]
 
 let keywordsRegex = new RegExp(keywords.join('|'))
