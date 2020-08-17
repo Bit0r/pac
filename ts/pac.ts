@@ -19,6 +19,7 @@ const domains = [
     'deepl.com',
     'diigo.com',
     'disqus.com',
+    'doubleclick.net',
     'dwnews.com',
     'fbcdn.net',
     'fontawesome.com',
@@ -34,7 +35,7 @@ const domains = [
     'kubernetes.io',
     'linuxcommand.org',
     'medium.com',
-    'merry.com.tw',
+    'msecnd.net',
     'myfonts.net',
     'nodejs.org',
     'onlinedoctranslator.com',
@@ -58,6 +59,7 @@ const domains = [
     'tox.chat',
     'typography.com',
     'umass.edu',
+    'visualstudio.com',
     'wenxuecity.com',
     'windows.net'
 ]
@@ -65,8 +67,6 @@ const domains = [
 const keywords = [
     'amazon',
     'azure',
-    'bbc',
-    'doubleclick',
     'facebook',
     'ggpht',
     'gitbook',
@@ -87,7 +87,6 @@ const keywords = [
     'twimg',
     'twitter',
     'v2ray',
-    'visualstudio',
     'vsassets',
     'webscraper',
     'wiki',
