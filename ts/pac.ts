@@ -71,6 +71,7 @@ const keywords = [
     'azure',
     'digitalocean',
     'facebook',
+    'fastly',
     'firebase',
     'ggpht',
     'gitbook',
