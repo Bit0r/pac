@@ -66,6 +66,7 @@ const domains = [
 
 const keywords = [
     'amazon',
+    'aws',
     'azure',
     'facebook',
     'firebase',
