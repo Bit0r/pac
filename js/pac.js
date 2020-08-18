@@ -11,6 +11,7 @@ const domains = [
     'blogger.com',
     'bootstrapcdn.com',
     'carbonads.net',
+    'castle.io',
     'cat-v.org',
     'chromium.org',
     'cloudflare.com',
