@@ -22,11 +22,14 @@ const domains = [
     'disqus.com',
     'doubleclick.net',
     'dwnews.com',
+    'fastly.com',
     'fbcdn.net',
     'fontawesome.com',
     'generatedata.com',
+    'ggpht.com',
     'golang.org',
     'gravatar.com',
+    'gstatic.com',
     'hp.net',
     'imgur.com',
     'javascript.info',
@@ -59,11 +62,16 @@ const domains = [
     't.me',
     'torproject.org',
     'tox.chat',
+    'twimg.com',
+    'typekit.net',
     'typography.com',
     'umass.edu',
     'visualstudio.com',
+    'vsassets.io',
+    'webscraper.io',
     'wenxuecity.com',
-    'windows.net'
+    'windows.net',
+    'ytimg.com'
 ]
 
 const keywords = [
@@ -72,15 +80,12 @@ const keywords = [
     'azure',
     'digitalocean',
     'facebook',
-    'fastly',
     'firebase',
-    'ggpht',
     'gitbook',
     'github',
     'gitlab',
     'gmail',
     'google',
-    'gstatic',
     'instagram',
     'microsoft',
     'mysql',
@@ -89,14 +94,10 @@ const keywords = [
     'sqlite',
     'steam',
     'telegram',
-    'twimg',
     'twitter',
     'v2ray',
-    'vsassets',
-    'webscraper',
     'wiki',
-    'youtu',
-    'ytimg'
+    'youtu'
 ]
 
 let keywordsRegex = new RegExp(keywords.join('|'))
