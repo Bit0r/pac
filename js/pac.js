@@ -25,6 +25,7 @@ const domains = [
     'fastly.com',
     'fbcdn.net',
     'fontawesome.com',
+    'gcorelabs.com',
     'generatedata.com',
     'ggpht.com',
     'golang.org',
