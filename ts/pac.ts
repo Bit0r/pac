@@ -32,6 +32,7 @@ const domains = [
     'gstatic.com',
     'hp.net',
     'imgur.com',
+    'intercom.io',
     'javascript.info',
     'jetbrains.com',
     'kde.org',
