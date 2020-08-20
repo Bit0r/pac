@@ -36,6 +36,7 @@ const domains = [
     'intercom.io',
     'javascript.info',
     'jetbrains.com',
+    'jquery.com',
     'kde.org',
     'keycdn.com',
     'kubernetes.io',
