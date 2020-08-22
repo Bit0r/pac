@@ -47,6 +47,7 @@ const domains = [
     'nodejs.org',
     'onlinedoctranslator.com',
     'openuserjs.org',
+    'pearson.com',
     'php.net',
     'pinterest.com',
     'princeton.edu',
