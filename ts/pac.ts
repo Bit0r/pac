@@ -75,6 +75,7 @@ const domains = [
     'webscraper.io',
     'wenxuecity.com',
     'windows.net',
+    'wordpress.com',
     'ytimg.com'
 ]
 
