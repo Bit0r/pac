@@ -29,6 +29,7 @@ const domains = [
     'geeksforgeeks.org',
     'generatedata.com',
     'ggpht.com',
+    'git-scm.com',
     'golang.org',
     'gravatar.com',
     'gstatic.com',
