@@ -48,6 +48,7 @@ const domains = [
     'prismic.io',
     'readthedocs.io',
     'revealjs.com',
+    'ruvds.com',
     'ryanstutorials.net',
     'sstatic.net',
     'stackblitz.io',
