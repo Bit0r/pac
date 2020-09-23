@@ -27,6 +27,7 @@ const domains = [
     'gcorelabs.com',
     'generatedata.com',
     'ggpht.com',
+    'gitea.io',
     'git-scm.com',
     'gravatar.com',
     'gstatic.com',
