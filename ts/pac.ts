@@ -21,7 +21,7 @@ const domains = [
     'disqus.com',
     'doubleclick.net',
     'dwnews.com',
-    'fastly.com',
+    'fastly.net',
     'fbcdn.net',
     'fontawesome.com',
     'gcorelabs.com',
