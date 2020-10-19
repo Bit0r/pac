@@ -31,6 +31,7 @@ const domains = [
     'git-scm.com',
     'gravatar.com',
     'gstatic.com',
+    'hcaptcha.com',
     'hp.net',
     'imgur.com',
     'intercom.io',
