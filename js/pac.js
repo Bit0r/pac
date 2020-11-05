@@ -47,6 +47,7 @@ const domains = [
     'pearson.com',
     'php.net',
     'pinterest.com',
+    'plantuml.com',
     'prismic.io',
     'readthedocs.io',
     'revealjs.com',
