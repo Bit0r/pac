@@ -66,6 +66,7 @@ const domains = [
     'twimg.com',
     'typekit.net',
     'typography.com',
+    'uml.ac.at',
     'visualstudio.com',
     'vsassets.io',
     'webscraper.io',
