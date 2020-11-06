@@ -15,6 +15,7 @@ const domains = [
     'castle.io',
     'cloudflare.com',
     'codesandbox.io',
+    'composingprograms.com',
     'csacademy.com',
     'deepl.com',
     'diigo.com',
